@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <form action="#" method="post">
+    <!-- for links the label to the input thorugh the id -->
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name" placeholder="Name">  
+    <br>
+    <label for="user_email">Email:</label>
+    <input type="email" id="user_email" name="email" placeholder="you@example.com">
+    <br>
+    <label for="user_password">Password:</label>
+    <input type="password" id="user_pasword" name="password">
+    <br>
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age">
+    <br>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+    <br>
+    <!-- drop down menus -->
+    <label for="car">Car:</label>
+    <select name="car" id="car">
+      <option value="mercedes">Mercedes</option>
+      <option value="tesla">Tesla</option>
+      <option value="volvo">Volvo</option>
+      <option value="bmw">BMW</option>
+      <option value="mini">Mini</option>
+      <option value="ford">Porsche</option>
+    </select>
+    <br>
+    <!-- for multiple sub groups of selection -->
+    <label for="car">Clothes:</label>
+    <select name="fashion">
+      <optgroup label="Clothing">
+        <option value="t_shirt">T-Shirts</option>
+        <option value="sweater">Sweaters</option>
+        <option value="coats">Coats</option>
+      </optgroup>
+      <optgroup label="Foot Wear">
+        <option value="sneakers">Sneakers</option>
+        <option value="boots">Boots</option>
+        <option value="sandals">Sandals</option>
+      </optgroup>
+    </select>
+    <!-- for multiple button selections -->
+    <h1>Ticket Type</h1>
+    <div>
+      <input type="radio" id="child" name="ticket_type" value="child">
+      <label for="child">Child $10</label>
+    </div>
+    <div>
+      <input type="radio" id="adult" name="ticket_type" value="adult">
+      <label for="adult">Adult $20</label>
+    </div>
+    <div>
+      <input type="radio" id="senior" name="ticket_type" value="senior">
+      <label for="senior">Senior $15</label>
+    </div>
+    <!-- check boxes allowing for multiple inputs -->
+    <h1>Pizza Toppings</h1>
+    <div>
+      <input type="checkbox" id="sausage" name="topping" value="sausage">
+      <label for="sausage">Sausage</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="onions" name="topping" value="onions">
+      <label for="onions">Onions</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+      <label for="pepperoni">Pepperoni</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+      <label for="mushrooms">Mushrooms</label>
+    </div>
+    <!-- field set used to section out form -->
+    <fieldset>
+      <legend>What would you like to drink?</legend>
+      <div>
+        <input type="radio" name="drink" id="coffee" value="coffee">
+        <label for="coffee">Coffee</label>
+      </div>
+      
+      <div>
+        <input type="radio" name="drink" id="tea" value="tea">
+        <label for="tea">Tea</label>
+      </div>
+      
+      <div>
+        <input type="radio" name="drink" id="soda" value="soda">
+        <label for="soda">Soda</label>
+      </div>
+    </fieldset>
+    <button type="submit" id="sibmit-button">submit</button>
+  </form>
+</body>
+</html>
